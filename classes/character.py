@@ -1,15 +1,15 @@
 import random
+from data.names import names
 
 
 class Character:
     def __init__(self):
-        self.name = "Hero"
-        self.health = 100
-        self.attack = 10
-        self.defense = 5
+        self.name = "name: " + self.generate_name()
+        self.health = self.generate_stat()
+        self.attack = self.generate_stat()
+        self.defense = self.generate_stat()
 
     def generate_name(self):
-        names = ["Hero", "Villain", "Goblin", "Dragon"]
         return random.choice(names)
 
     def generate_stat(self):
