@@ -23,6 +23,6 @@ class Character:
         return random.choice(types)
 
     def generate_stat(self):
-        return random.randint(1, 20)
+        return random.randint(1, 10)
 
 
